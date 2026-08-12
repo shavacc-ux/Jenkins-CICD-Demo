@@ -2,7 +2,6 @@ pipeline {
 
     agent any
 
-
     stages {
 
 
@@ -12,7 +11,7 @@ pipeline {
 
                 echo "Building Application"
 
-                sh 'npm run build'
+                bat 'npm run build'
 
             }
         }
@@ -24,7 +23,7 @@ pipeline {
 
                 echo "Testing Application"
 
-                sh 'npm test'
+                bat 'npm test'
 
             }
         }
